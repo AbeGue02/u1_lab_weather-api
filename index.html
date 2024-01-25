@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>The Weather</title>
+</head>
+<body class="isDay">
+    <div id="searchBar">
+        <input type="search" placeholder="Enter City Name Here" id="citySearch">
+        <button id="toggleMeasuringSystem">Fº</button>
+    </div>
+    <div id="currentWeather">
+        <div id="location">
+            <p id="city">City</p>
+            <p id="region">Region</p>
+            <p id="country">Country</p>
+        </div>
+    </div>
+    <div id="currentWeatherStatus">
+        <img id="currentStatusIcon" href="#">
+        <div id="currentTemperature">
+            <div id="temperatures">
+                <p id="temperature">Temperature: <span class="currentTemperature"></span><span class="temperatureUnit"></span></p>
+                <p id="feelsLike">Feels Like: <span class="currentFeelsLike"></span><span class="temperatureUnit"></span></p>
+            </div>
+            <div id="currentStatusContainer">
+                <p id="currentStatus">Current Status: </p>
+            </div>
+        </div>
+    </div>
+    <div id="timeContainer">
+        <p id="localTime">Local:Time</p>
+    </div>
+</body>
+</html>

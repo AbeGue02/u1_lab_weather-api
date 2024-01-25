@@ -1,0 +1,95 @@
+html {
+    height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+div {
+    display: flex;
+}
+
+.isDay {
+    background-color: rgb(89,169,214);
+}
+
+#searchBar {
+    flex: 0.1;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 1rem;
+    color: white;
+    font-size: 2rem;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+#citySearch {
+    flex: 0.7;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 3px solid white;
+    font-size: 1rem;
+    padding-top: 3rem;
+}
+
+#toggleMeasuringSystem {
+    flex: 0.2;
+}
+
+#currentWeather {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem 1rem
+}
+
+#location {
+    flex-direction: column;
+    align-items: center;
+}
+
+#location p {
+    font-size: 1rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+#currentWeatherStatus {
+    flex: 0.2;
+    flex-direction: row;
+    margin: 1em;
+    justify-content: space-between;
+}
+
+#temperatures, #currentStatusContainer, #currentTemperature {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#temperatures, #currentStatus {
+    flex: 0.5;
+}
+
+#temperatures p, #currentStatus {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+#timeContainer {
+    justify-content: center;
+}
+
+#currentStatusIcon, #currentTemperature {
+    flex: 0.48;
+}
