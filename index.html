@@ -10,30 +10,34 @@
 </head>
 <body class="isDay">
     <div id="searchBar">
-        <input type="search" placeholder="Enter City Name Here" id="citySearch">
-        <button id="toggleMeasuringSystem">Fº</button>
+        <form onsubmit="return false">
+            <input type="search" placeholder="Enter City Name Here" id="citySearch">
+        </form>
+        <button id="toggleMeasuringSystem">Imperial</button>
     </div>
-    <div id="currentWeather">
-        <div id="location">
-            <p id="city">City</p>
-            <p id="region">Region</p>
-            <p id="country">Country</p>
-        </div>
-    </div>
-    <div id="currentWeatherStatus">
-        <img id="currentStatusIcon" href="#">
-        <div id="currentTemperature">
-            <div id="temperatures">
-                <p id="temperature">Temperature: <span class="currentTemperature"></span><span class="temperatureUnit"></span></p>
-                <p id="feelsLike">Feels Like: <span class="currentFeelsLike"></span><span class="temperatureUnit"></span></p>
-            </div>
-            <div id="currentStatusContainer">
-                <p id="currentStatus">Current Status: </p>
+    <div class="searchResults">
+        <div id="currentWeather">
+            <div id="location">
+                <h2 id="city">City</h2>
+                <h3 id="region">Region</h3>
+                <h3 id="country">Country</h3>
             </div>
         </div>
-    </div>
-    <div id="timeContainer">
-        <p id="localTime">Local:Time</p>
+        <div id="currentWeatherStatus">
+            <img id="currentStatusIcon" src="#">
+            <div id="currentTemperatureContainer">
+                <div id="temperatures">
+                    <p id="temperature">Temperature: <span id="currentTemperature"></span><span class="temperatureUnit">Fº</span></p>
+                    <p id="feelsLike">Feels Like: <span id="currentFeelsLike"></span><span class="temperatureUnit">Fº</span></p>
+                </div>
+                <div id="currentStatusContainer">
+                    <p id="currentStatus">Current Status: </p>
+                </div>
+            </div>
+        </div>
+        <div id="timeContainer">
+            <p id="localTime">Local:Time</p>
+        </div>
     </div>
 </body>
 </html>
